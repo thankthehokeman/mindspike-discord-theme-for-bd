@@ -144,7 +144,7 @@ body *, ::placeholder {
 	padding: 0 !important;
 }
 
-.avatar__08316 {
+.avatar_ec86aa {
 	left: -56px;
     width: 56px;
     height: 56px;
@@ -154,11 +154,11 @@ body *, ::placeholder {
 	margin: 0;
 }
 
-.avatar__08316:hover {
+.avatar_ec86aa:hover {
     border-color: var(--mindspike-chat-color1);
 }
 
-.avatar__08316:active {
+.avatar_ec86aa:active {
 	transform: none !important;
 }
 
