@@ -31,7 +31,7 @@
 
 
 * {
-    --background-primary: black !important;
+    --background-primary: background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("assets/claws.gif") !important;
     --background-secondary: black !important;
     --background-secondary-alt: black !important;
     --background-tertiary: black !important;
@@ -210,7 +210,7 @@ body *, ::placeholder {
 	overflow: visible !important; /* HACK: wHY caNT I gET tHE iNLInE CODE blOCKS
 										   to sTOP oVERFlowIng dIScORD wHaT THe FUCK */
 }
-
+							/* bestie i have no clue */
 .markup_a7e664 {
 	line-height: 1.25em;
 }
