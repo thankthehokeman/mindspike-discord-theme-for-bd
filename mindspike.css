@@ -61,6 +61,7 @@
 
 
 body *, ::placeholder {
+	background: url("assets/corru gradiented more.png") !important;
     font-family: "spacemono" !important;
 	font-size: 0.8rem;
 	font-variant-ligatures: none !important;
@@ -135,8 +136,6 @@ body *, ::placeholder {
 	margin-bottom: 8px !important;
 	padding-bottom: 8px !important;
     border-bottom-width: 1px;
-	background: url("assets/corru gradiented more.png") !important;
-	position: fixed;
 }
 
 .contents_ec86aa {
