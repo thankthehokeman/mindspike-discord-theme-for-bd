@@ -139,6 +139,7 @@ body *, ::placeholder {
 
 .scrollerInner_e2e187 {
 	background: url("assets/corru gradiented more.png") !important;
+	position: fixed;
 }
 
 .contents_ec86aa {
