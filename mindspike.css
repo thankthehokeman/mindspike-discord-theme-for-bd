@@ -131,6 +131,7 @@ body *, ::placeholder {
 
 /* somebody's going to hell for this */
 .scrollerInner_e2e187 > *:has(+ * .groupStart_d5deea, + :not(li, .isUnread_fc5f50:not(.beforeGroup_d5deea), .backgroundFlash_d5deea)) .message_d5deea {
+	background: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png");
 	margin-bottom: 8px !important;
 	padding-bottom: 8px !important;
     border-bottom-width: 1px;
