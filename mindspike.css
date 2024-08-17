@@ -32,10 +32,10 @@
 
 * {
     --background-primary: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
-    --background-secondary: black !important;
-    --background-secondary-alt: black !important;
-    --background-tertiary: black !important;
-    --background-floating: black !important;
+    --background-secondary: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
+    --background-secondary-alt: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
+    --background-tertiary: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
+    --background-floating: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
     --channeltextarea-background: black !important;
     --background-modifier-selected: black !important;
 	--background-modifier-hover: black !important;
