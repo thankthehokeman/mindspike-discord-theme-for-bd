@@ -109,7 +109,8 @@ body *, ::placeholder {
 
 .mentioned_d5deea {
 	background-color: unset !important;
-	border-color: orange;
+	border-color: yellow;
+    border-style: dashed;
 }
 
 .mentioned_d5deea::before {
@@ -134,6 +135,10 @@ body *, ::placeholder {
 	margin-bottom: 8px !important;
 	padding-bottom: 8px !important;
     border-bottom-width: 1px;
+}
+
+.scrollerInner_e2e187 {
+	background: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important
 }
 
 .contents_ec86aa {
