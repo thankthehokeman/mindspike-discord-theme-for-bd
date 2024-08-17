@@ -36,12 +36,12 @@
     --background-secondary-alt: black !important;
     --background-tertiary: black !important;
     --background-floating: black !important;
-    --channeltextarea-background: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
+    --channeltextarea-background: black !important;
     --background-modifier-selected: black !important;
 	--background-modifier-hover: black !important;
 	--background-modifier-active: black !important;
 	--modal-background: black !important;
-	--home-background: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
+	--home-background: black !important;
 	--custom-category-channel-space-before-category: 2px !important;
 	--button-secondary-background: yellow !important;
 	--button-secondary-background-hover: aqua !important;
@@ -879,12 +879,14 @@ body *, ::placeholder {
 }
 
 .membersGroup_cbd271 {
+	font-family: "barcodetext" !important;
 	margin-top: 16px;
 	padding-top: 0;
 	height: 27px;
 }
 
 .membersGroup_cbd271 * {
+	font-family: "barcodetext" !important;
 	position: relative;
 	clip-path: unset;
 }
