@@ -31,7 +31,7 @@
 
 
 * {
-    --background-primary: black !important;
+    --background-primary: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.75)), url("assets/corru gradiented more.png") !important;
     --background-secondary: black !important;
     --background-secondary-alt: black !important;
     --background-tertiary: black !important;
