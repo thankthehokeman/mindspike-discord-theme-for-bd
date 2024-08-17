@@ -135,9 +135,6 @@ body *, ::placeholder {
 	margin-bottom: 8px !important;
 	padding-bottom: 8px !important;
     border-bottom-width: 1px;
-}
-
-.scrollerInner_e2e187 {
 	background: url("assets/corru gradiented more.png") !important;
 	position: fixed;
 }
