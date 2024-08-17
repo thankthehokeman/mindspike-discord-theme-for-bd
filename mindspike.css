@@ -172,7 +172,8 @@ body *, ::placeholder {
 }
 
 .mentioned_d5deea .avatar_ec86aa {
-	border-color: orange;
+	border-color: yellow;
+    border-style: dashed;
 }
 
 .header_ec86aa {
@@ -183,7 +184,8 @@ body *, ::placeholder {
 }
 
 .mentioned_d5deea .header_ec86aa {
-	border-color: orange;
+	border-color: yellow;
+    border-style: dashed;
 }
 
 .header_ec86aa .username_ec86aa {
