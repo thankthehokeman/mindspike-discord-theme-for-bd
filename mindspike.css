@@ -97,6 +97,11 @@ body *, ::placeholder {
 /* messages */
 .scrollerContent_e2e187 {
 	/* background: url("assets/corru gradiented more.png") !important; */
+    padding: 0 20px 0 30px;
+}
+
+.scrollerContent_e2e187 > *:has(:not(.scrollerInner_e2e187)) {
+	/* background: url("assets/corru gradiented more.png") !important; */
 	background-color: transparent;
     padding: 0 20px 0 30px;
 }
@@ -104,6 +109,7 @@ body *, ::placeholder {
 .message_d5deea {
     border-color: var(--mindspike-chat-color0);
     border-style: solid;
+	background: black;
     border-left-width: 1px;
     border-right-width: 1px;
 	padding-right: 0 !important;
@@ -464,9 +470,9 @@ body *, ::placeholder {
     z-index: 1;
 }
 
-.scroller_e2e187 {
+/* .scroller_e2e187 {
 	background: url("assets/corru gradiented more.png");
-}
+} */
 
 
 .divider_d5deea {
