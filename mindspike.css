@@ -460,6 +460,7 @@ body *, ::placeholder {
     height: 10px;
     width: 100%;
     box-shadow: inset -5px 15px 10px -10px black;
+	background: url("assets/corru gradiented more.png");
     z-index: 1;
 }
 
