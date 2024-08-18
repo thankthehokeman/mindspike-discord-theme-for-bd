@@ -15,6 +15,11 @@
     src: url("assets/LibreBarcode128Text-Regular.woff2");
 }
 
+@font-face {
+    font-family: "bstrd";
+    src: url("assets/NewspaperCutoutWhiteOnBlac-Rg.ttf") format('truetype');
+}
+
 
 :root {
 	--mindspike-chat-color0: aqua;
@@ -137,6 +142,15 @@ body *, ::placeholder {
 	display: none;
 }
 
+.markup_f8f345 > h1 > span > span {
+	color: #FF0066;
+	line-height: 1em;
+	vertical-align: top;
+    font-family: "bstrd" !important;
+    font-size: 2.2rem;
+	overflow: visible !important;
+}
+
 .emoji {
 	vertical-align: top;
 }
@@ -224,7 +238,7 @@ body *, ::placeholder {
     border-style: dashed;
 }
 
-.header_ec86aa .username_ec86aa {
+.headerText_f9f2ca > .username_f9f2ca {
 	line-height: 1em;
 	vertical-align: top;
     font-family: "barcodetext" !important;
@@ -232,7 +246,7 @@ body *, ::placeholder {
 	overflow: visible !important;
 }
 
-.header_ec86aa .username_ec86aa:hover {
+.username_f9f2ca:hover {
     color: white !important;
     text-decoration: none !important;
 }
@@ -1034,7 +1048,7 @@ body *, ::placeholder {
 .overlayBackground_c69a7b {
 	border-radius: 0;
 	margin: 0;
-	overflow: visible;
+	overflow: auto;
 }
 
 .userPopoutInner_c69a7b .overlayBackground_c69a7b {
