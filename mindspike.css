@@ -96,7 +96,8 @@ body *, ::placeholder {
 
 /* messages */
 .scrollerContent_e2e187 {
-	background: url("assets/corru gradiented more.png") !important;
+	/* background: url("assets/corru gradiented more.png") !important; */
+	background-color: transparent;
     padding: 0 20px 0 30px;
 }
 
