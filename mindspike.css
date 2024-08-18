@@ -96,7 +96,7 @@ body *, ::placeholder {
 
 /* messages */
 .scrollerContent_e2e187 {
-	/* background: url("assets/corru gradiented more.png") !important; */
+	/* background: url("assets/corrugradientedmore.png") !important; */
 	background-color: transparent;
     padding: 0 20px 0 30px;
 }
@@ -461,12 +461,12 @@ body *, ::placeholder {
     height: 10px;
     width: 100%;
     box-shadow: inset -5px 15px 10px -10px black;
-	background: url("assets/corru gradiented more.png");
+	background: url("assets/corrugradientedmore.png");
     z-index: 1;
 }
 
 /* .scroller_e2e187 {
-	background: url("assets/corru gradiented more.png");
+	background: url("assets/corrugradientedmore.png");
 } */
 
 
