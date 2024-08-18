@@ -49,16 +49,23 @@
 	--button-positive-background: yellow !important;
 	--button-positive-background-hover: aqua !important;
 	--modal-footer-background: black !important;
-	--button-danger-background: red !important;
+	--button-danger-background: #FF0066 !important;
 	--button-danger-background-hover: aqua !important;
-	--button-outline-danger-border: red !important;
-	--button-outline-danger-border-hover: red !important;
-	--button-outline-danger-background-hover: red !important;
-	--button-outline-danger-text: red !important;
+	--button-outline-danger-border: #FF0066 !important;
+	--button-outline-danger-border-hover: #FF0066 !important;
+	--button-outline-danger-background-hover: #FF0066 !important;
+	--button-outline-danger-text: #FF0066 !important;
 	--button-outline-danger-text-hover: black !important;
 	--profile-gradient-button-color: yellow;
+	--brand-500: aqua;
+	--bg-brand: aqua;
+	--brand-200: #FF0066;
+	--text-positive: aqua;
 }
 
+/* .colorBrand_dd4f85 {
+	background-color: #FF0066;
+} */
 
 body *, ::placeholder {
     font-family: "spacemono" !important;
@@ -103,20 +110,35 @@ body *, ::placeholder {
 .message_d5deea {
     border-color: var(--mindspike-chat-color0);
     border-style: solid;
-	background: black;
+	background: black !important;
     border-left-width: 1px;
     border-right-width: 1px;
 	padding-right: 0 !important;
+	opacity: 1 !important;
+}
+
+.message_d5deea:hover {
+	background: rgba(0, 0, 0, 0.75) !important;
 }
 
 .mentioned_d5deea {
-	background: black;
+    box-shadow: 0px 0px 15px yellow;
+	background: black !important;
+	opacity: 1 !important;
 	border-color: yellow;
     border-style: dashed;
 }
 
+.mentioned_d5deea:hover {
+	background: rgba(0, 0, 0, 0.75) !important;
+}
+
 .mentioned_d5deea::before {
 	display: none;
+}
+
+.emoji {
+	vertical-align: top;
 }
 
 .wrapper_ec86aa {
@@ -130,6 +152,22 @@ body *, ::placeholder {
 .groupStart_d5deea {
 	margin-top: 8px !important;
     border-top-width: 1px;
+}
+
+.botTag_f9f2ca::after {
+	content: "GOLEM";
+	offset-position: 0 -200;
+	color: black;
+	font-size: .8rem;
+	font-weight: 600;
+}
+
+.botTagVerified_a9e77f > * {
+	fill: black !important;
+}
+
+.botText_a9e77f {
+	display: none;
 }
 
 /* somebody's going to hell for this */
@@ -235,7 +273,6 @@ body *, ::placeholder {
 }
 
 .container_b558d0 {
-	padding-left: 8px;
 	padding-right: 10px;
 }
 
@@ -272,6 +309,28 @@ body *, ::placeholder {
 .embedFull_ad0b71 {
 	border: 1px dashed;
 	border-left: 4px solid;
+}
+
+.nonVisualMediaItem_cda674 {
+	border: 1px dashed;
+	border-color: yellow;
+}
+
+.embedWrapper_b558d0 {
+	border: 1px dashed;
+	border-color: yellow !important;
+}
+
+.embedWrapper_b558d0::before {
+	display: none;
+}
+
+.embedTitle_b0068a {
+	font-family: "barcodetext" !important;
+	font-size: 2.2rem;
+	font-weight: normal;
+	line-height: 1;
+	overflow: visible;
 }
 
 .iconWrapper_b26897 {
@@ -473,20 +532,21 @@ body *, ::placeholder {
 
 
 .divider_d5deea {
-	margin: 10px 0 !important;
+	margin: 20px 0 !important;
+	border: 5;
 }
 
 /* unread separator */
-.isUnread_fc5f50 {
+.isUnread_c2654d {
 	position: static;
 	margin: 0 !important;
 	padding: 0 4px;
 	border: 0;
-	background: red;
+	background: aqua;
 	height: 1px;
 }
 
-.isUnread_fc5f50:not(.beforeGroup_d5deea) {
+.isUnread_c2654d:not(.beforeGroup_d5deea) {
 	border: 1px solid var(--mindspike-chat-color0);
 	border-top: 0;
 	border-bottom: 0;
@@ -934,6 +994,10 @@ body *, ::placeholder {
 	display: none;
 }
 
+.avatar_f94206 {
+	border: 2px solid yellow !important;
+}
+
 .avatarWrapper_f89da9 {
 	left: 12px;
 	background: black;
@@ -953,10 +1017,10 @@ body *, ::placeholder {
 	background: none;
 }
 
-/* remove avatar overlay */
+/* remove avatar overlay
 .userProfileInner_c69a7b .wrapper_c51b4e foreignObject {
 	mask: none;
-}
+} */
 
 /* remove status indicator backdrop */
 .userProfileInner_c69a7b .wrapper_c51b4e circle {
@@ -985,7 +1049,7 @@ body *, ::placeholder {
 	border-radius: 0;
 }
 
-.nickname_c9ccf6 {
+.nickname_c32acf {
 	font-family: "barcodetext" !important;
 	font-size: 2.3rem;
 	font-weight: normal;
@@ -1000,41 +1064,85 @@ body *, ::placeholder {
 	margin: 0 12px !important;
 }
 
-.userTag_c9ccf6 {
+.userTag_c32acf {
 	font-size: 0.75rem;
 	margin-top: 10px;
 }
 
-.userTag_c9ccf6 * {
+.userTag_c32acf * {
 	font-size: 0.75rem;
 	color: magenta !important;
 }
 
-.userTag_c9ccf6::before {
+.userTag_c32acf::before {
 	content: "::SIGNATURE::'";
 	color: yellow;
 }
 
-.userTag_c9ccf6::after {
+.userTag_c32acf::after {
 	content: "';";
 	color: yellow;
 }
 
-.pronouns_c9ccf6 {
+.tabBarItem_c1519f[aria-label='About Me']::after {
+	content: "::ADDITIONAL NOTES::";
+	color: yellow;
+	font-size: 14px;
+	line-height: 1.2857142857142858;
+	font-weight: 400;
+}
+
+.tabBarItem_c1519f[aria-label='About Me'] > .defaultColor_a595eb {
+	display: none;
+}
+
+*[id='uid_1653'] {
+	display:none
+}
+
+.banner_c3e427 {
+	background-color: #000 !important;
+}
+
+.statusText_d0a252 {
+	overflow-y: visible;
+}
+
+.pronouns_c32acf > .dotSpacer_c32acf {
+	display: none;
+}
+
+.pronounsText_c32acf {
 	font-size: 0.75rem;
 	color: magenta !important;
 	padding-top: 0;
 
 }
 
-.pronouns_c9ccf6::before {
+.pronounsText_c32acf::before {
 	content: "::PRONOUNS::'";
 	color: yellow;
 }
 
-.pronouns_c9ccf6::after {
+.pronounsText_c32acf::after {
 	content: "';";
 	color: yellow;
+}
+
+.statusBubbleOuter_d0a252 {
+	background: black !important;
+}
+
+.statusBubbleOuter_d0a252::before {
+	background: transparent !important;
+}
+
+.statusBubbleOuter_d0a252::after {
+	background: transparent !important;
+}
+
+.statusBubble_d0a252 {
+	background: black !important;
 }
 
 .customStatusSection_d2b491 {
@@ -1253,11 +1361,11 @@ body *, ::placeholder {
 	color: yellow;
 }
 
-.pronouns_afed89 {
+.pronounsText_c32acf {
 	padding: 0 !important;
 }
 
-.pronouns_afed89::before {
+.pronounsText_c32acf::before {
 	content: "::PRONOUNS::'";
 }
 
