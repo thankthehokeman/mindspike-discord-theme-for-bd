@@ -151,6 +151,15 @@ body *, ::placeholder {
 	overflow: visible !important;
 }
 
+.markup_f8f345 > h2 > span > span {
+	line-height: 1em;
+	vertical-align: top;
+	font-weight: normal;
+    font-family: "barcodetext" !important;
+    font-size: 2.2rem;
+	overflow: visible !important;
+}
+
 .emoji {
 	vertical-align: top;
 }
@@ -330,7 +339,7 @@ body *, ::placeholder {
 	border-color: yellow;
 }
 
-.embedWrapper_b558d0 {
+.embedWrapper_b558d0:not(:has(.embedWrapper_b558d0>*)) {
 	border: 1px dashed;
 	border-color: yellow !important;
 }
@@ -553,15 +562,15 @@ body *, ::placeholder {
 /* unread separator */
 .isUnread_c2654d {
 	position: static;
-	margin: 0 !important;
+	margin: 10 !important;
 	padding: 0 4px;
-	border: 0;
+	border: 5px double;
 	background: aqua;
 	height: 1px;
 }
 
 .isUnread_c2654d:not(.beforeGroup_d5deea) {
-	border: 1px solid var(--mindspike-chat-color0);
+	border: 5px double var(--mindspike-chat-color0);
 	border-top: 0;
 	border-bottom: 0;
 }
@@ -883,7 +892,109 @@ body *, ::placeholder {
 	color: yellow !important;
 }
 
+/* polls */
 
+.pollContainer_b558d0 {
+	border: 3px double white !important;
+	background-color: transparent !important;
+}
+
+.pollContainer_b558d0 > .header_a1531c > .question_a1531c {
+	height: unset;
+	background: url("assets/static.gif");
+    border: 1px solid magenta;
+    border-radius: 0;
+	color: black;
+}
+
+.pollContainer_b558d0 > .bottomBar_a1531c > .buttonPresentation_a1531c {
+	border: 3px double white !important;
+	background-color: black !important;
+}
+
+.pollContainer_b558d0 > .bottomBar_a1531c > .buttonPresentation_a1531c > .contents_dd4f85 > .fontScaling_dc00ef {
+	display: none;
+}
+
+.pollContainer_b558d0 > .bottomBar_a1531c > .buttonPresentation_a1531c:not(.secondaryButtonPresentation_a1531c) > .contents_dd4f85::before {
+	content: "continue rendering";
+	color: white !important;
+}
+
+.pollContainer_b558d0 > .bottomBar_a1531c > .secondaryButtonPresentation_a1531c  > .contents_dd4f85::before {
+	content: "nevermind";
+	color: white !important;
+}
+
+@keyframes goUpSlightly {
+	from {margin-bottom: 0px; margin-top: 0px;}
+	to {margin-bottom: 5px; margin-top: -5px; animation-play-state: paused}
+}
+
+.answer_cf2c85{
+	transition: margin 0.25s;
+	/* animation-name: goUpSlightly;
+	animation-duration: 0.25s;
+	animation-iteration-count: 1; */
+}
+
+.answer_cf2c85:hover:not(:has(.answerInner_cf2c85>.votesData_cf2c85), .votedStyles_b5cb3c) {
+	margin: -5px 0px 5px 0px;
+	/* animation-name: goUpSlightly;
+	animation-duration: 0.25s;
+	animation-iteration-count: 1; */
+}
+
+.selected_cf2c85 {
+	outline: 0px !important;
+}
+
+.answer_cf2c85:has(> .selected_cf2c85) {
+	offset-position: top !important;
+	outline: 0px !important;
+}
+
+.answerInner_cf2c85 {
+	border-top-right-radius: 20px !important;
+	border-right-color: aqua !important;
+	background: white !important;
+	color: black !important;
+	border: 0.32rem double;
+	border-color: inherit;
+    border-right-color: inherit;
+}
+
+.votedStyles_b5cb3c > .answerInner_cf2c85 {
+	background: black !important;
+	border: 0.28rem double white;
+	border-right-color: magenta !important;
+}
+
+.victorStyles_b5cb3c > .answerInner_cf2c85 {
+	border-right-color: magenta !important;
+}
+
+.votePercentageBar_cf2c85 {
+	background-color: aqua;
+}
+
+.votesData_cf2c85 > * {
+	color: grey
+}
+
+.prompt_a1531c::before {
+	text-transform: uppercase !important;
+	content: "ATTENTION::'";
+}
+
+.prompt_a1531c {
+	text-transform: lowercase;
+	color: yellow;
+}
+
+.prompt_a1531c::after {
+	content: "';";
+}
 
 /* channel list */
 .containerDefault_f6f816 {
@@ -900,6 +1011,13 @@ body *, ::placeholder {
 	border-radius: 0 !important;
 }
 
+.modeMuted_d8bfb3 > * > .link_d8bfb3 {
+	border-style: none !important;
+}
+
+.modeMuted_d8bfb3 > * > .link_d8bfb3 > .linkTop_d8bfb3 > .name_d8bfb3 {
+	color: #555;
+}
 
 .modeSelected_d8bfb3 .link_d8bfb3 {
 	background: var(--mindspike-left-sidebar-color1) !important;
